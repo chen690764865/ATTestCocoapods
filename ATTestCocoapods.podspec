@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint ATReadingBookSDK.podspec' to ensure this is a
+# Be sure to run `pod lib lint ATTestCocoapods.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'ATReadingBookSDK'
-  s.version          = '2.1.5'
-  s.summary          = 'ATReadingBookSDK.'
+  s.name             = 'ATTestCocoapods'
+  s.version          = '2.1.6'
+  s.summary          = 'ATTestCocoapods.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-ATReadingBookSDK Copyright (c) 2018 ABC Reading. All rights reserved.
+ATTestCocoapods Copyright (c) 2018 ABC Reading. All rights reserved.
                        DESC
 
-  s.homepage         = 'https://github.com/ABCReading/ATReadingBookSDK'
+  s.homepage         = 'https://github.com/chen690764865/ATTestCocoapods'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Spaino' => 'captain_spaino@163.com' }
-  s.source           = { :git => 'https://github.com/ABCReading/ATReadingBookSDK.git', :tag => s.version.to_s }
+  s.author           = { 'Summer' => '690764865@qq.com' }
+  s.source           = { :git => 'https://github.com/chen690764865/ATTestCocoapods.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
@@ -34,17 +34,17 @@ ATReadingBookSDK Copyright (c) 2018 ABC Reading. All rights reserved.
     s.platform     = :ios, '8.0'
 
     #需要包含的源文件
-    s.source_files = 'ATReadingBookSDK/Classes/*.framework/Headers/*.{h}'
+    s.source_files = 'ATTestCocoapods/Classes/*.framework/Headers/*.{h}'
 
     #你的SDK路径
-    s.vendored_frameworks = 'ATReadingBookSDK/Classes/*.framework'
+    s.vendored_frameworks = 'ATTestCocoapods/Classes/*.framework'
 
     #SDK头文件路径
-    s.public_header_files = 'ATReadingBookSDK/Classes/*.framework/Headers/*.h'
+    s.public_header_files = 'ATTestCocoapods/Classes/*.framework/Headers/*.h'
 
 
    s.resource_bundles = {
-     'ATReadingBookSDK' => ['ATReadingBookSDK/Assets/*.bundle']
+     'ATTestCocoapods' => ['ATTestCocoapods/Assets/*.bundle']
    }
    
    valid_archs = ['arm64',
